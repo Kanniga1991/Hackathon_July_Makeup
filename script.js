@@ -1,16 +1,11 @@
- function getData(){
+async function getData(){
     
-          fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`,{
+          const apidata = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json`,{
             method:"GET"
         })
-        .then (apidata =>
-            { return apidata.json();
-            })
-        .then(data =>{
-            console.log(data);
-            loaddata(data);
-        })
-        
+        const data = await apidata.json();
+        console.log(data);
+        loaddata(data);
     }
 
    
