@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+;
 
   
   /*                        background                          */
@@ -8,74 +8,86 @@
     margin:0;
     padding:0;
   }
-  
-  #Main{
+  body {
     
-  /*   background: orchid; */
-  height:100vh;
-    width:100%; 
-    display:flex;
-   justify-content:center;
-   align-items:center;
-   
-    
-  
-}
-.second{
-  height:100vh;
-  width:100%;
-  flex-direction:column;
-  border-radius:15px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  
-  
-}
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
   
  
+.container{
+  
+  
+  border-radius: 20px; 
+  background-image: linear-gradient(to right,
+   #c3d17c, #b6d38d, #add49d, #a8d4ac,
+    #a8d3b8, #9bd1c1, #92cfcb, #8ecbd3,
+     #83c3e3, #92b7ec, #b3a7e6, #d793ce);
+     transition: all 200ms;
+  max-width: 450px; 
+ 
+}
+/* @media (min-width: 400px) {
+  .container {
+    display: flex;
+  }
+} */
+  
+.title
+{margin-top: 2rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 3.5rem;
+display:flex;
+justify-content: center;
+text-align: center;
+}
   .content{
     display:flex;
     flex-direction:column;
-    text-align:center;
+    margin-left: 0.5rem;    
   }
   .getname{
-    color: #F42151;
-    margin-bottom:3%;
+    color:red;
+    
     text-transform: capitalize;
-    font-style: oblique;
+    font-family :serif;
   }
   .getbrand{
-    color :#215BF4;
-    margin-bottom:3%;
+    color :yellow;
+    
     text-transform: capitalize;
     font-style: oblique;
   }
   .getprice{
     
-    margin-bottom:3%;
+  
     text-transform: capitalize;
-    font-style: oblique;
-    color:#FF4A99;
+    font-family :cursive;
+    color:blue;
   }
   .getimage
   {
-    
-    margin-bottom:3%;
-    font-style: oblique;
+    height:200px;
+    width : 50%;
+    border-radius: 2rem;
+    margin-left: 4rem;
   }
+
   .getproductlink
   {
     
-    margin-bottom:3%;
-    color:black;
+    color:rgb(104, 40, 40);
     font-style: oblique;
   }
   .getdescription
   {
-    font-size:1rem;
-    margin-bottom:3%;
-   color:orange; 
-    font-style: oblique;
+       font-size: 14px;; 
+   color:black;
+    font-family:monospace;
+  }
+  .container:hover .getimage {
+    transform: scale(1.2);
   }
   
+ 
