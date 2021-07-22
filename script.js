@@ -17,8 +17,13 @@ getData();
 {
     var title=document.createElement('div');
     title.className ="title";
-    title.innerText="BEAUTY PRODUCTS"
+    title.innerText="BEAUTY & GLOW PRODUCTS"
        content.append(title);
+       var kanniga=document.createElement('div');
+    kanniga.className ="kanniga";
+    kanniga.innerText="- Designed by Kanniga Manivannan"
+       content.append(kanniga);
+       
   
   data.forEach((makeup)=>{
       if((makeup.id <=1048) &&(makeup.id>=1000) )
@@ -52,20 +57,21 @@ getData();
    image.src=makeup.image_link;
    content.append(image);
    
-   var getproductlink =document.createElement('h5');
-   getproductlink.className ="getproductlink";
-   getproductlink.innerText=('Product_link : ' + makeup.product_link);
-   content.append(getproductlink);
    
-   var getdescription =document.createElement('h6');
+  var getproductlink=document.createElement("button")
+   getproductlink.innerText="Visit the link for more info";
+   var button=document.createElement('a')
+   button.href=makeup.product_link;
+   getproductlink.append(button)
+   content.append(getproductlink);
+  
+   
+     var getdescription =document.createElement('h6');
    getdescription.className ="getdescription";
    getdescription.innerText=('Description : ' + makeup.description);
    content.append(getdescription);         
      } 
     
-    
-  });
-  
-  
- 
+    });
+     
 }

@@ -35,33 +35,44 @@
 } */
   
 .title
-{margin-top: 2rem;
+{
+  margin-top: 2rem;
 font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 3.5rem;
+font-size: 3rem;
 display:flex;
 justify-content: center;
+text-align: center;
+}
+.kanniga
+{
+  margin-top: 2rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1rem;
+display:flex;
+justify-content: flex-end;
 text-align: center;
 }
   .content{
     display:flex;
     flex-direction:column;
-    margin-left: 0.5rem;    
-  }
-  .getname{
-    color:red;
+    margin-left: 0.5rem; 
     
+       
+  }
+  .getname
+  {
+    color:red;  
     text-transform: capitalize;
     font-family :serif;
   }
-  .getbrand{
+  .getbrand
+  {
     color :yellow;
-    
     text-transform: capitalize;
     font-style: oblique;
   }
-  .getprice{
-    
-  
+  .getprice
+  {
     text-transform: capitalize;
     font-family :cursive;
     color:blue;
@@ -70,24 +81,37 @@ text-align: center;
   {
     height:200px;
     width : 50%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     margin-left: 4rem;
   }
 
   .getproductlink
-  {
-    
+  {    
     color:rgb(104, 40, 40);
     font-style: oblique;
   }
   .getdescription
   {
        font-size: 14px;; 
-   color:black;
-    font-family:monospace;
+   color:brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  .container:hover .getimage {
+  .container:hover .getimage 
+  {
     transform: scale(1.2);
   }
-  
+  button
+  {
+    border-radius: 2rem;
+    background-color:navy;
+    margin-left: 5rem;;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width:45%;
+    color: white;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif;
+  }
  
